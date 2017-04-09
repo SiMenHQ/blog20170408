@@ -1,10 +1,34 @@
 <!DOCTYPE html>
 <html>
-   <head>
-  <title>我的第一个页面
-  </title>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.js">
+  </script>
+   <link rel="stylesheet" href="http://typo.sofi.sh/typo.css"/>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <style>
+    body{ padding:18px;}
+    img {max-width:100%;}
+  </style>
 </head>
-  <body>
- 这是我的页面内容
-  </body>
+<body>
+ <div id="cf">
+# 我的第一篇博客
+
+**启子**
+
+__不要相信网上名人名言. ————鲁迅__
+
+大家好,我今天学会 Markdown了.
+
+<img src="http://img06.tooopen.com/images/20170214/tooopen_sy_198645593736.jpg"/>
+  </div>
+  <script>
+    var cf=document.getElementById("cf")
+    var markdown=cf.innerHTML
+    var html=marked(markdown)
+    cf.innerHTML=html
+  </script>
+</body>
 </html>
